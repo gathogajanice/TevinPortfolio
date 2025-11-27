@@ -10,7 +10,9 @@ module.exports = defineConfig({
   },
   build: {
     rollupOptions: {
-      input: resolve(__dirname, 'page.html')
+      input: {
+        index: resolve(__dirname, 'page.html')
+      }
     }
   }
 });
